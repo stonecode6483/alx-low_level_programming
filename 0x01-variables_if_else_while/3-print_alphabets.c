@@ -1,14 +1,11 @@
-#include<stdio.h>
-
+#include <stdio.h>
 /**
  * Main - Entry point
- *
  * Return: 0 (success)
  */
 
 int main(void)
 {
-
 	char c;
 
 	char d;
