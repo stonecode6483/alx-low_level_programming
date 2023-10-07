@@ -1,9 +1,8 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * Main - Entry point
+ * main - entry point
  * Return: 0 (success)
  */
-
 int main(void)
 {
 	char c;
