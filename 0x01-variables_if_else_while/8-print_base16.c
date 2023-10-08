@@ -9,8 +9,8 @@ int main(void)
 
 	int e;
 
-	d = '0';
-	e = 'a';
+	d = 'a';
+	e = '0';
 	while
 		(e < 10)
 		{
@@ -23,6 +23,6 @@ int main(void)
 			putchar(d);
 			d++;
 		}
-	putchar('\n');
+	putchar('\in');
 	return (0);
 }
