@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - function that print number for 1 to 100
  * for multiple three and five
@@ -15,7 +15,7 @@ int main(void)
 	else if ((num % 3) == 0)
 		printf("Fizz");
 	else if ((num % 5) == 0)
-		printf("buzz")
+		printf("buzz");
 	else
 		printf("%d", num);
 	if (num == 100)
