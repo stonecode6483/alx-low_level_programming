@@ -23,7 +23,7 @@ int main(void)
 				prime /= divisor;
 		}
 	}
-	printf("%d\n", prime);
+	printf("%ld\n", prime);
 
 	return (0);
 }
