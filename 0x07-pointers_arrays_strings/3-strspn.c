@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	for (j = 0; s[j] != '\0'; j++)
 	{
-		for (k = 0; s[k] != accept[k]; k++)
+		for (k = 0; s[j] != accept[k]; k++)
 		{
 			if (accept[k] == '\0')
 				return (j);
