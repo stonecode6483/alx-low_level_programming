@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * pow_recursion - function that returns the value of x
+ * _pow_recursion - function that returns the value of x
  * raised to the power of y.
  * @x:parameter 1
  * @y: parameter 2
