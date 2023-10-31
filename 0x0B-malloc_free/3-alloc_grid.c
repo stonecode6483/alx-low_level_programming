@@ -8,34 +8,70 @@
 * Return: pointer to 2 dimmesional array
 */
 int **alloc_grid(int width, int height)
-{
-int **nee;
-int a, b;
+{int **mee;
+
+int x, y;
+
+
 
 if (width <= 0 || height <= 0)
+
 return (NULL);
 
-nee = malloc(sizeof(int *) * height);
 
-if (nee == NULL)
+
+mee = malloc(sizeof(int *) * height);
+
+
+
+if (mee == NULL)
+
 return (NULL);
 
-for (a = 0; a < height; a++)
-{
-nee[a] = malloc(sizeof(int *) * width);
 
-if (nee[a] == NULL)
+
+for (x = 0; x < height; x++)
+
 {
-for (; a >= 0; a--)
-free(nee[a]);
-free(nee);
+
+mee[x] = malloc(sizeof(int) * width);
+
+
+
+if (mee[x] == NULL)
+
+{
+
+for (; x >= 0; x--)
+
+free(mee[x]);
+
+
+
+free(mee);
+
 return (NULL);
+
 }
+
 }
-for (a = 0; a < height; a++)
+
+
+
+for (x = 0; x < height; x++)
+
 {
-for (b = 0; b < width; b++)
-nee[a][b] = 0;
+
+for (y = 0; y < width; y++)
+
+mee[x][y] = 0;
+
 }
-return (nee);
+
+
+
+return (mee);
+
 }
+:%s/^\s\s*//
+
