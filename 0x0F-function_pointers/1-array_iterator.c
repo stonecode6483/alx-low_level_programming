@@ -5,7 +5,7 @@
  * as a parameter on each element of an array
  * @array: variable  of arary
  * @size: size of the array
- *i @action: pointer to the array
+ * @action: pointer to the array
  * Return: void
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
