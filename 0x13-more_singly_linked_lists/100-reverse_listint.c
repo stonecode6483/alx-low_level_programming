@@ -13,7 +13,7 @@ while (*head)
 {
 next = (*head)->next;
 (*head)->next = prv;
-prev = *head;
+prv = *head;
 *head = next;
 }
 
